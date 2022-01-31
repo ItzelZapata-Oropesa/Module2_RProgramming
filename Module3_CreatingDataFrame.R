@@ -17,3 +17,5 @@ CBSpoll <- c(12, 75, 43, 19, 1, 21, 19)
 #Turning specififed Vectors into a dataframe
 ElectionPolls <- data.frame(Name, ABCpoll, CBSpoll)
 
+#New dataframe containting specified variables
+ElectionPolls
