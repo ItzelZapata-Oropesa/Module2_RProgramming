@@ -37,3 +37,12 @@ boxplot(BP ~ Second, data = hospital.df, main = "BP vs Second Assesment",
 #Box plot for BP and Final Decision
 boxplot(BP ~ FinalDecision, data = hospital.df, main = "BP vs Final Decision",
         xlab = "Final Decision", ylab = "Blood Pressure reading", names = c("Low", "High"))
+
+
+#Histograms
+##First Eval
+hist(First, main = "First Evaluation", xlab = "First evaluation")
+##Second Eval
+hist(Second, main = "Second Evaluations", xlab = "Second evaluation")
+##Final Eval
+hist(FinalDecision, main = "Final Decision", xlab = "Final Decision")
