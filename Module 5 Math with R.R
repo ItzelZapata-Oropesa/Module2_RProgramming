@@ -10,4 +10,12 @@ t(B)
 a <- c(10,12,18,5)
 b <- c(7,22,15,11)
 
-  
+#Multiply matrices by vector 
+A * a
+A * b
+B * b
+B * a
+
+#Reassign vectors a and b to be equal to the number of rows of the column for the corresponding matrix
+a <- c(1:30, nrow = 10)
+b <- c(7 :40, nrow = 10)
