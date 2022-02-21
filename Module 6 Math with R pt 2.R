@@ -7,3 +7,9 @@ A + B
 
 #b find A-B
 A-B
+
+
+#Using diag() function
+diag(c(4,1,2,3))
+     
+     
