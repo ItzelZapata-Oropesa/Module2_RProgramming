@@ -15,7 +15,7 @@ A * a
 A * b
 B * b
 B * a
-det(A)
+
 
 #Reassign vectors a and b to be equal to the number of rows of the column for the corresponding matrix
 a <- c(1:10)
@@ -26,7 +26,10 @@ A %*% a
 b %*% B
 
 #Inverse a matrix
+S <- matrix(A, nrow = 2)
+S
 S <- matrix(B, nrow = 2)
-
 #Checking det
+det(A)
+det(B)
 det(S)
