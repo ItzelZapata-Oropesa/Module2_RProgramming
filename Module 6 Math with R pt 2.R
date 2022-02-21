@@ -11,5 +11,11 @@ A-B
 
 #Using diag() function
 diag(c(4,1,2,3))
-     
-     
+
+#Replicating matrix provided
+m <- diag(3, ncol = 5, nrow = 5)
+m
+m[2:5, 1] <- 2
+m
+m[1, 2:5] <- 1
+m
