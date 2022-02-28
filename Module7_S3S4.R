@@ -12,9 +12,10 @@ library(pryr)
 otype(air)
 
 #Example of dataset for S3
+  #Example 1
 s3 <- list(name = "Myself", height = 5.3 , weight = 140)
 s3
-
+#Example 2
 s3_2 <- list(school = "USF", campus = "Tampa", state = "FL" )
 s3_2
 
@@ -27,3 +28,19 @@ setClass("Family_Dynamics",
          weight = "numeric")
 )
 "Family_Dynamics"
+#Creating Instance for s4 class
+  #Example 1
+s4 <- new("Family_Dynamics", name = "Myself", height = 5.3, weight = 140)
+s4
+
+#Defining S4_2 class
+setClass("Universities",
+         representation(
+           school = "character",
+           campus = "character",
+           state = "character")
+)
+"Universities"
+  #Example 2
+s4_2 <- new("Universities", school = "USF", campus = "Tampa", state = "FL")
+s4_2
