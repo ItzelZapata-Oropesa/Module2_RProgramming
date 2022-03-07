@@ -18,3 +18,5 @@ write.table(studentAverage, "Students_Gendered_Mean")
 iStudents <- subset(studentAssignment6, grepl("i", studentAssignment6$Name, ignore.case = TRUE))
 iStudents
 
+#Covert Filtered dataset into a CSV file
+write.csv(iStudents, "students_i_subset.csv")
