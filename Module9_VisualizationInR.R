@@ -16,3 +16,8 @@ library(lattice)
 latticePlot <- xyplot(month ~ as.factor(status), data = storms, cex = 1.5, group = status,
                       auto.key = TRUE, main = "1975 - 2015 Storms Lattice", xlab = "Status")
 latticePlot
+
+#ggplot2
+library(ggplot2)
+ggplot(storms, aes(x = status, y = month, color = status)) + geom_point(aes(shape = status), size = 5) + 
+  ggtitle("1975 - 2015 Stroms ggplot")
