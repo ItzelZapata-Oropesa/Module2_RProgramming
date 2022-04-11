@@ -2,7 +2,9 @@
 title: "Module12"
 author: "Itzel Zapata-Oropesa"
 date: "4/11/2022"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
