@@ -31,7 +31,7 @@ library(ggplot2)
 
 To demonstrate the full use of our R Markdown file, we will explore the airquality dataset
 
-```{r pressure, echo=FTRUE}
+```{r pressure, echo = TRUE}
 air <- airquality
 head(air)
 #fill in missing values
