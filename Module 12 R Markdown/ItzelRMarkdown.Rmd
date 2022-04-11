@@ -1,0 +1,48 @@
+---
+title: "Module12"
+author: "Itzel Zapata-Oropesa"
+date: "4/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Assignment
+
+Create your own Markdown file and post the code on GitHub and your reflection on the process of Markdown in your blog.  
+This is just a reminder that an R Markdown is just a document. By studying the document source code file, compiling it, and observing the result, side-by-side with the source, you’ll learn a lot about the R Markdown and LaTeX mathematical typesetting language, and you’ll be able to produce nice-looking documents with R input and output neatly formatted. The content of your R Markdown can be the main functions you are creating for your final project where you will describe those functions or create FAQ to your final project. It is your decision.
+The key formatting constructs are discussed at http://rmarkdown.rstudio.com/authoring_basics.html
+Dr. Friedman
+
+```{r}
+
+```
+
+## Libraries
+Here we will load the libraries required for our code.
+```{r libraries, echo=TRUE}
+library(ggplot2)
+```
+
+
+## Our code
+
+To demonstrate the full use of our R Markdown file, we will explore the airquality dataset
+
+```{r pressure, echo=FTRUE}
+air <- airquality
+head(air)
+#fill in missing values
+air$Ozone[is.na(air$Ozone)]<-mean(air$Ozone,na.rm=TRUE)
+air$Solar.R[is.na(air$Solar.R)] <- mean(air$Solar.R, na.rm = TRUE)
+```
+
+## Plotting the Data
+This is where we create a plot for our data
+```{r plot, echo=TRUE}
+ggplot(air, aes(x = Temp, y = Ozone, color = Wind, size = Solar.R)) +
+  geom_point()
+```
+
